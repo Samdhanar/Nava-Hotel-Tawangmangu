@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nava Hotel Tawangmangu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .hero {
+      background: url('image.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .feature-icon {
+      font-size: 1.3rem;
+      margin-right: 8px;
+      color: #0d6efd;
+    }
+
+    .navbar-custom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: transparent !important;
+      z-index: 1000;
+    }
+
+    .navbar .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+    }
+
+    .navbar .nav-link:hover {
+      color: #002aff !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="room.html">Room</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="weding.html">Wedding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meeting.html">Meeting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary rounded-2" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Kamar & Room Nava Hotel Tawangmangu</h1>
+      <p class="lead mb-4">Kenyamanan menginap dengan pemandangan indah Tawangmangu</p>
+      <a href="#daftar-room" class="btn btn-primary btn-lg">Lihat Kamar</a>
+    </div>
+  </section>
+
+  <!-- Jenis Kamar -->
+  <section class="py-5 bg-light" id="daftar-room">
+    <div class="container">
+      <h2 class="text-center section-title">Jenis Kamar</h2>
+      <div class="row g-4">
+
+        <!-- Superior Room -->
+        <div class="col-md-4">
+          <div class="card shadow h-100 border-primary">
+            <img src="image copy.png" alt="Superior Room" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Superior Room</h5>
+              <p class="card-text">Kamar modern dengan kenyamanan maksimal, cocok untuk perjalanan bisnis dan liburan
+                singkat.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-wifi feature-icon"></i>Free Wi-Fi</li>
+                <li><i class="bi bi-tv feature-icon"></i>Smart TV</li>
+                <li><i class="bi bi-cup-hot feature-icon"></i>Coffee & Tea Maker</li>
+              </ul>
+              <p class="fw-bold text-primary">Rp 750.000 / malam</p>
+              <a href="contact.html" class="btn btn-outline-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deluxe Room -->
+        <div class="col-md-4">
+          <div class="card shadow h-100 border-primary">
+            <img src="image copy 2.png" alt="Deluxe Room" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Deluxe Room</h5>
+              <p class="card-text">Lebih luas dengan balkon pribadi dan pemandangan pegunungan yang menenangkan.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-wifi feature-icon"></i>Free Wi-Fi</li>
+                <li><i class="bi bi-tv feature-icon"></i>LED TV 42"</li>
+                <li><i class="bi bi-snow feature-icon"></i>Air Conditioner</li>
+                <li><i class="bi bi-cup-hot feature-icon"></i>Coffee & Tea Maker</li>
+              </ul>
+              <p class="fw-bold text-primary">Rp 1.200.000 / malam</p>
+              <a href="contact.html" class="btn btn-outline-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suite Room -->
+        <div class="col-md-4">
+          <div class="card shadow h-100 border-primary">
+            <img src="image copy 3.png" alt="Suite Room" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Suite Room</h5>
+              <p class="card-text">Pilihan eksklusif dengan ruang tamu, kamar tidur luas, dan layanan premium.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-wifi feature-icon"></i>High-Speed Wi-Fi</li>
+                <li><i class="bi bi-tv feature-icon"></i>Smart TV 55"</li>
+                <li><i class="bi bi-snow feature-icon"></i>AC Central</li>
+                <li><i class="bi bi-cup-hot feature-icon"></i>Mini Bar & Coffee Maker</li>
+                <li><i class="bi bi-badge-vip feature-icon"></i>Layanan VIP</li>
+              </ul>
+              <p class="fw-bold text-primary">Rp 2.500.000 / malam</p>
+              <a href="contact.html" class="btn btn-outline-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <!-- Footer -->
+  <footer class="bg-light text-dark text-center py-3">
+    <p class="mb-0">&copy; 2025 Nava Hotel Tawangmangu | Kamar & Room</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
